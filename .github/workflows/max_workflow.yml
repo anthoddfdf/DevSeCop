@@ -1,0 +1,9 @@
+name: Hello Max pipeline
+on: [push]
+jobs: 
+  hello-max-job:
+    run-on: ubuntu-latest
+    steps:
+       - uses: action/checkout@v2 
+       - name: Print max
+         run: python max.py
