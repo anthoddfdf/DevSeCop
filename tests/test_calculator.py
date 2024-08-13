@@ -1,4 +1,3 @@
-#this is a code by me 
 from calculator import add, subtract
 
 
