@@ -23,6 +23,6 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python-3.10@master
         env:
-          MAX_TOKEN: ${{ secrets.MAX_TOKEN }}
+          SNYK_TOKEN: ${{ secrets.MAX_TOKEN }}
         with:
           args: --severity-threshold=high --package-manager=pip
